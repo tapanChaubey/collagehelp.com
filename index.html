@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Together</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="main">
+    <div class="navbar">
+        <img src="newlogo.png" alt="Logo"/>
+        <a href="#" class="dashboard-link">Dashboard</a>
+        <a href="#" class="navbar-link">HOME</a>
+        <a href="#" class="navbar-link">Medical</a>
+        <a href="#" class="navbar-link">Engineering</a>
+        <a href="#" class="navbar-link">Management</a>
+        <a href="#" class="navbar-link">Scince</a>
+        <a href="#" class="navbar-link">About</a>
+        <a href="#" class="navbar-link">Service</a>
+        <a href="Account.html" class="navbar-link">Account</a>
+        <a href="#content" class="navbar-link">Contect Us</a>
+    </div>
+    <div id="mid">
+    </div>
+    
+    <div class="footer">
+        
+        <div id="top-collage">
+            <center>  <h2>Top-Collage</h2></center> 
+            <ul>
+                <li class="list1"><a href="#">MEDICAL</a></li>
+                <li class="list1"><a href="#">ENGINEERING</a></li>
+                <li class="list1"><a href="#">AGRICULTURE</a></li>
+                <li class="list1"><a href="#">MANAGEMENT</a></li>
+                <li class="list1"><a href="#">SCIENCE</a></li>
+                <li class="list1"><a href="#">PHARMACY</a></li>
+            </ul>
+        </div>
+
+        <div id="top-Course">
+          <center>  <h2>Top-Course</h2></center> 
+            <ul>
+                <li class="list1"><a href="#">M.B.B.S</a></li>
+                <li class="list1"><a href="#">BDS</a></li>
+                <li class="list1"><a href="#">BE</a></li>
+                <li class="list1"><a href="#">B.SC(AGRI)</a></li>
+                <li class="list1"><a href="#">B.SC(NURSING)</a></li>
+                <li class="list1"><a href="#">B.TECH</a></li>
+                <li class="list1"><a href="#">B.B.A</a></li>
+            </ul>
+        </div>
+            <div id="content">
+                <center><h2>Contact Us</h2></center>
+                <form action="content" method="post">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email"required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+        
+                    <label for="city">City You Live In:</label>
+                    <input type="text" id="city" name="city"required>
+        
+                    <label for="course">Course Interested In:</label>
+                    <select id="course" name="course">
+                        <option value="Medical">Medical</option>
+                        <option value="Medical">Engineering</option>
+                        <option value="Medical">B.SC(AGRI)</option>
+                        <option value="Medical">B.SC(NURSING)</option>
+                        <option value="Medical">B.B.A</option>
+                        <option value="Medical">M.B.A</option>
+                        <option value="Medical">Others</option>
+                    </select>
+                    <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+           
+        </div>
+    </div>
+</div>
+ 
+    
+</body>
+</html>

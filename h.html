@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    
+        background-image: url("photo1.jpg");
+        background-size:cover;
+     background-position: center;
+     color: white;
+    }
+    
+    #content {
+        width: 500px;
+        height: 600px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        background: transparent;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: auto; /* Center the content horizontally */
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+       
+    }
+    
+    form {
+        width: 100%;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+        color: #fbebeb;
+    }
+    
+    label {
+        margin-bottom: 8px;
+        font-weight: bold;
+        text-align: left;
+        display: block;
+    }
+    
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    select,
+    textarea {
+        resize: vertical;
+    }
+    
+    button {
+        background-color: rgb(3, 86, 10);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    
+    button:hover {
+        background-color: #033e2c;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+        #content {
+            width: 90%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div id="content">
+        <center><h2>Contact</h2></center>
+
+        <form action="#" method="post">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" value="xyz@gmail.com" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" value="9573344148" required>
+
+            <label for="city">City You Live In:</label>
+            <input type="text" id="city" name="city" value="Bangalore" required>
+
+            <label for="course">Course Interested In:</label>
+            <select id="course" name="course">
+                <option value="Medical">Medical</option>
+                <option value="Medical">Engineering</option>
+                <option value="Medical">B.SC(AGRI)</option>
+                <option value="Medical">B.SC(NURSING)</option>
+                <option value="Medical">B.B.A</option>
+                <option value="Medical">M.B.A</option>
+                <option value="Medical">Others</option>
+                
+            
+            </select>
+            <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+        
+
+           
+            <button type="submit">Submit</button>
+        </form>
+</div>
+</body>
+</html>

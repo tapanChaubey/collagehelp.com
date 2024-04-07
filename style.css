@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(72, 70, 63);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar-link{
+    margin-left: 30px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.dashboard-link{
+    font-size: 30px;
+    color:white;
+    text-decoration: none;
+}
+
+.dashboard-link:hover{
+    border: 2px solid white;
+    height: 50px;
+}
+.navbar-link:hover{
+    border: 2px solid white;
+    height: 30px;
+    
+}
+.navbar img {
+    height: 60px; 
+    width: 100px;
+}
+@media screen and (max-width: 768px) {
+    
+    .navbar {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .navbar-link, .dashboard-link {
+        margin: 0;
+        padding: 10px; 
+    }
+}
+#mid{
+   height: 600px;
+    background-image: url("pexels-andrea-piacquadio-3762800.jpg");
+    background-size:cover;
+    background-position: center;
+}
+.footer {
+    height: 500px;
+    background-image: url('accontbackground.avif');
+    background-size:cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+#top-collage{
+
+width: 350px;
+height: 400px;
+}
+#top-Course{
+    
+width: 350px;
+height: 400px;
+}
+
+
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+    
+}
+li{
+    margin: 20px;
+}
+#content {
+    width: 400px;
+    height: 450px;
+    
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #13102d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left:60px; /* Center the content horizontally */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+   
+}
+
+form {
+    width: 400px;
+    
+}
+
+#content  h2 {
+    
+    color: #066803;
+    background-color: rgb(233, 237, 237);
+    width: 40%;
+    border-radius: 5px;
+}
+
+label {
+    
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    font-size: 18px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin: 5px,0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+select,
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: rgb(3, 86, 10);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 5px;
+   
+}
+
+button:hover {
+    background-color: #033e2c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #content {
+        width: 90%;
+    }
+}
